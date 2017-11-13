@@ -1,0 +1,597 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactsList.vue should render the content correctly - with contacts 1`] = `
+<div>
+  <div
+    class="el-row"
+  >
+    <div
+      class="el-col el-col-24"
+    >
+      <div>
+        <h1>
+          Contacts
+        </h1>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="el-row"
+  >
+    <div
+      class="el-col el-col-24"
+    >
+      <div>
+        <div
+          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden el-table--enable-row-hover el-table--enable-row-transition"
+          style="width: 100%;"
+        >
+          <div
+            class="hidden-columns"
+          >
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+          </div>
+          <div
+            class="el-table__header-wrapper"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="el-table__header"
+              style="width: 480px;"
+            >
+              <colgroup>
+                <col
+                  name="el-table_1_column_7"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_8"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_9"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_10"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_11"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_12"
+                  width="80"
+                />
+              </colgroup>
+              <thead
+                class=""
+              >
+                <tr
+                  class=""
+                >
+                  <th
+                    class="el-table_1_column_7  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      First name
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_8  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Last Name
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_9  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Date of birth
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_10  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      E-mail
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_11  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Addresses
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_12  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Phone numbers
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div
+            class="el-table__body-wrapper is-scroll-left"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="el-table__body"
+              style="width: 480px;"
+            >
+              <colgroup>
+                <col
+                  name="el-table_1_column_7"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_8"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_9"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_10"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_11"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_12"
+                  width="80"
+                />
+              </colgroup>
+              <tbody>
+                <tr
+                  class="el-table__row"
+                >
+                  <td
+                    class="el-table_1_column_7 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Bruno
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_8 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Rezende
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_9 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      12/03/1980
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_10 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul>
+                        <li>
+                          brunovianarezende@gmail.com
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_11 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul>
+                        <li>
+                          1373 George Avenue - Montgomery, AL, 36693
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_12 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul>
+                        <li>
+                          55-31-2515-5924
+                        </li>
+                        <li>
+                          55-31-99967-7424
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="el-table__row el-table__row--striped"
+                >
+                  <td
+                    class="el-table_1_column_7 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Jose
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_8 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Anything
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_9 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      30/12/1975
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_10 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul>
+                        <li>
+                          jose@gmail.com
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_11 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul />
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_12 is-left "
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <ul />
+                    </div>
+                  </td>
+                </tr>
+                <!---->
+              </tbody>
+            </table>
+            <!---->
+            <!---->
+          </div>
+          <!---->
+          <!---->
+          <!---->
+          <!---->
+          <div
+            class="el-table__column-resize-proxy"
+            style="display: none;"
+          />
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ContactsList.vue should render the content correctly - without contacts 1`] = `
+<div>
+  <div
+    class="el-row"
+  >
+    <div
+      class="el-col el-col-24"
+    >
+      <div>
+        <h1>
+          Contacts
+        </h1>
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="el-row"
+  >
+    <div
+      class="el-col el-col-24"
+    >
+      <div>
+        <div
+          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden el-table--enable-row-hover"
+          style="width: 100%;"
+        >
+          <div
+            class="hidden-columns"
+          >
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+             
+            <div />
+          </div>
+          <div
+            class="el-table__header-wrapper"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="el-table__header"
+              style="width: 480px;"
+            >
+              <colgroup>
+                <col
+                  name="el-table_1_column_1"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_2"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_3"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_4"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_5"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_6"
+                  width="80"
+                />
+              </colgroup>
+              <thead
+                class=""
+              >
+                <tr
+                  class=""
+                >
+                  <th
+                    class="el-table_1_column_1  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      First name
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_2  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Last Name
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_3  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Date of birth
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_4  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      E-mail
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_5  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Addresses
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_6  is-left   is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Phone numbers
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div
+            class="el-table__body-wrapper is-scroll-left"
+          >
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="el-table__body"
+              style="width: 480px;"
+            >
+              <colgroup>
+                <col
+                  name="el-table_1_column_1"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_2"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_3"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_4"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_5"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_6"
+                  width="80"
+                />
+              </colgroup>
+              <tbody>
+                <!---->
+              </tbody>
+            </table>
+            <div
+              class="el-table__empty-block"
+              style="width: 480px;"
+            >
+              <span
+                class="el-table__empty-text"
+              >
+                There are no contacts
+              </span>
+            </div>
+            <!---->
+          </div>
+          <!---->
+          <!---->
+          <!---->
+          <!---->
+          <div
+            class="el-table__column-resize-proxy"
+            style="display: none;"
+          />
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

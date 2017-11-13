@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import router from './router'
 import store from './store'
-import Vuex from 'vuex'
 import ElementUI from 'element-ui'
 
 import App from './App'
 
-Vue.use(Vuex)
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
