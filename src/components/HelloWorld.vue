@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+      <el-col :span="24"><div class="grid-content bg-purple-dark">{{contacts.length}}</div></el-col>
     </el-row>
     <el-row>
       <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
@@ -30,17 +30,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  computed: mapState([
+    'contacts'
+  ])
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import url("//unpkg.com/element-ui@2.0.4/lib/theme-chalk/index.css");
 .el-row {
