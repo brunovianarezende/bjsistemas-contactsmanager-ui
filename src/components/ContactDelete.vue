@@ -45,7 +45,7 @@
       </div>
     </div>
     <el-button class="dont-delete" v-on:click="onNoButtonClick">No</el-button>
-    <el-button class="do-delete" type="danger">Yes</el-button>
+    <el-button class="do-delete" v-on:click="onYesButtonClick" type="danger">Yes</el-button>
   </div>
 </modal>
 </template>
@@ -67,6 +67,10 @@ export default {
     formatFirstLine,
     formatSecondLine,
     onNoButtonClick () {
+      this.$modal.hide('contact-delete-modal');
+    },
+    onYesButtonClick () {
+      this.$store.dispatch('deleteContact', this.contact.id)
       this.$modal.hide('contact-delete-modal');
     },
     _visible() {

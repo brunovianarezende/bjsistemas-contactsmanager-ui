@@ -19,6 +19,9 @@ export default {
     },
     getModalComponent () {
       return this.$refs.hack
+    },
+    getContacts() {
+      return this.contacts
     }
   },
   components: {
