@@ -2,6 +2,10 @@
 
 exports[`ContactsList.vue should render the content correctly - with contacts 1`] = `
 <div>
+  <!---->
+   
+  <!---->
+   
   <div
     class="el-row"
   >
@@ -24,12 +28,14 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
     >
       <div>
         <div
-          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden el-table--enable-row-hover el-table--enable-row-transition"
+          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden el-table--enable-row-transition"
           style="width: 100%;"
         >
           <div
             class="hidden-columns"
           >
+            <div />
+             
             <div />
              
             <div />
@@ -50,13 +56,9 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
               cellpadding="0"
               cellspacing="0"
               class="el-table__header"
-              style="width: 480px;"
+              style="width: 600px;"
             >
               <colgroup>
-                <col
-                  name="el-table_1_column_7"
-                  width="80"
-                />
                 <col
                   name="el-table_1_column_8"
                   width="80"
@@ -77,6 +79,14 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                   name="el-table_1_column_12"
                   width="80"
                 />
+                <col
+                  name="el-table_1_column_13"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_14"
+                  width="120"
+                />
               </colgroup>
               <thead
                 class=""
@@ -85,7 +95,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                   class=""
                 >
                   <th
-                    class="el-table_1_column_7  is-left   is-leaf"
+                    class="el-table_1_column_8  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -96,7 +106,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </th>
                   <th
-                    class="el-table_1_column_8  is-left   is-leaf"
+                    class="el-table_1_column_9  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -107,7 +117,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </th>
                   <th
-                    class="el-table_1_column_9  is-left   is-leaf"
+                    class="el-table_1_column_10  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -118,7 +128,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </th>
                   <th
-                    class="el-table_1_column_10  is-left   is-leaf"
+                    class="el-table_1_column_11  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -129,7 +139,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </th>
                   <th
-                    class="el-table_1_column_11  is-left   is-leaf"
+                    class="el-table_1_column_12  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -140,7 +150,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </th>
                   <th
-                    class="el-table_1_column_12  is-left   is-leaf"
+                    class="el-table_1_column_13  is-left   is-leaf"
                     colspan="1"
                     rowspan="1"
                   >
@@ -148,6 +158,17 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                       class="cell"
                     >
                       Phone numbers
+                    </div>
+                  </th>
+                  <th
+                    class="el-table_1_column_14     is-hidden is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Actions
                     </div>
                   </th>
                 </tr>
@@ -162,13 +183,9 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
               cellpadding="0"
               cellspacing="0"
               class="el-table__body"
-              style="width: 480px;"
+              style="width: 600px;"
             >
               <colgroup>
-                <col
-                  name="el-table_1_column_7"
-                  width="80"
-                />
                 <col
                   name="el-table_1_column_8"
                   width="80"
@@ -189,13 +206,21 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                   name="el-table_1_column_12"
                   width="80"
                 />
+                <col
+                  name="el-table_1_column_13"
+                  width="80"
+                />
+                <col
+                  name="el-table_1_column_14"
+                  width="120"
+                />
               </colgroup>
               <tbody>
                 <tr
                   class="el-table__row"
                 >
                   <td
-                    class="el-table_1_column_7 is-left "
+                    class="el-table_1_column_8 is-left "
                   >
                     <div
                       class="cell"
@@ -204,7 +229,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_8 is-left "
+                    class="el-table_1_column_9 is-left "
                   >
                     <div
                       class="cell"
@@ -213,7 +238,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_9 is-left "
+                    class="el-table_1_column_10 is-left "
                   >
                     <div
                       class="cell"
@@ -222,7 +247,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_10 is-left "
+                    class="el-table_1_column_11 is-left "
                   >
                     <div
                       class="cell"
@@ -235,7 +260,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_11 is-left "
+                    class="el-table_1_column_12 is-left "
                   >
                     <div
                       class="cell"
@@ -248,7 +273,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_12 is-left "
+                    class="el-table_1_column_13 is-left "
                   >
                     <div
                       class="cell"
@@ -263,12 +288,66 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                       </ul>
                     </div>
                   </td>
+                  <td
+                    class="el-table_1_column_14   is-hidden"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <a
+                        class="edit-contact-icon"
+                      >
+                        <svg
+                          class="fa-icon"
+                          color="green"
+                          height="32"
+                          role="presentation"
+                          style="font-size: 2em;"
+                          version="1.1"
+                          viewBox="0 0 1792 1792"
+                          width="32"
+                        >
+                          <path
+                            d="M888 1184l116-116-152-152-116 116v56h96v96h56zM1328 464q-16-16-33 1l-350 350q-17 17-1 33t33-1l350-350q17-17 1-33zM1408 1058v190q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-14 14-32 8-23-6-45-6h-832q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-126q0-13 9-22l64-64q15-15 35-7t20 29zM1312 320l288 288-672 672h-288v-288zM1756 452l-92 92-288-288 92-92q28-28 68-28t68 28l152 152q28 28 28 68t-28 68z"
+                          />
+                           
+    
+                          <!---->
+                        </svg>
+                      </a>
+                       
+                      <br />
+                       
+                      <a
+                        class="delete-contact-icon"
+                      >
+                        <svg
+                          aria-label="Delete"
+                          class="fa-icon"
+                          color="red"
+                          height="32"
+                          role="img"
+                          style="font-size: 2em;"
+                          version="1.1"
+                          viewBox="0 0 1408 1792"
+                          width="25.142857142857142"
+                        >
+                          <path
+                            d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                          />
+                           
+    
+                          <!---->
+                        </svg>
+                      </a>
+                    </div>
+                  </td>
                 </tr>
                 <tr
                   class="el-table__row el-table__row--striped"
                 >
                   <td
-                    class="el-table_1_column_7 is-left "
+                    class="el-table_1_column_8 is-left "
                   >
                     <div
                       class="cell"
@@ -277,7 +356,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_8 is-left "
+                    class="el-table_1_column_9 is-left "
                   >
                     <div
                       class="cell"
@@ -286,7 +365,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_9 is-left "
+                    class="el-table_1_column_10 is-left "
                   >
                     <div
                       class="cell"
@@ -295,7 +374,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_10 is-left "
+                    class="el-table_1_column_11 is-left "
                   >
                     <div
                       class="cell"
@@ -308,7 +387,7 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_11 is-left "
+                    class="el-table_1_column_12 is-left "
                   >
                     <div
                       class="cell"
@@ -317,12 +396,66 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
                     </div>
                   </td>
                   <td
-                    class="el-table_1_column_12 is-left "
+                    class="el-table_1_column_13 is-left "
                   >
                     <div
                       class="cell"
                     >
                       <ul />
+                    </div>
+                  </td>
+                  <td
+                    class="el-table_1_column_14   is-hidden"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      <a
+                        class="edit-contact-icon"
+                      >
+                        <svg
+                          class="fa-icon"
+                          color="green"
+                          height="32"
+                          role="presentation"
+                          style="font-size: 2em;"
+                          version="1.1"
+                          viewBox="0 0 1792 1792"
+                          width="32"
+                        >
+                          <path
+                            d="M888 1184l116-116-152-152-116 116v56h96v96h56zM1328 464q-16-16-33 1l-350 350q-17 17-1 33t33-1l350-350q17-17 1-33zM1408 1058v190q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-14 14-32 8-23-6-45-6h-832q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-126q0-13 9-22l64-64q15-15 35-7t20 29zM1312 320l288 288-672 672h-288v-288zM1756 452l-92 92-288-288 92-92q28-28 68-28t68 28l152 152q28 28 28 68t-28 68z"
+                          />
+                           
+    
+                          <!---->
+                        </svg>
+                      </a>
+                       
+                      <br />
+                       
+                      <a
+                        class="delete-contact-icon"
+                      >
+                        <svg
+                          aria-label="Delete"
+                          class="fa-icon"
+                          color="red"
+                          height="32"
+                          role="img"
+                          style="font-size: 2em;"
+                          version="1.1"
+                          viewBox="0 0 1408 1792"
+                          width="25.142857142857142"
+                        >
+                          <path
+                            d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                          />
+                           
+    
+                          <!---->
+                        </svg>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -334,8 +467,432 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
           </div>
           <!---->
           <!---->
-          <!---->
-          <!---->
+          <div
+            class="el-table__fixed-right"
+            style="width: 120px;"
+          >
+            <div
+              class="el-table__fixed-header-wrapper"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="el-table__header"
+                style="width: 120px;"
+              >
+                <colgroup>
+                  <col
+                    name="el-table_1_column_8"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_9"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_10"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_11"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_12"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_13"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_14"
+                    width="120"
+                  />
+                </colgroup>
+                <thead
+                  class=""
+                >
+                  <tr
+                    class=""
+                  >
+                    <th
+                      class="el-table_1_column_8  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        First name
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_9  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Last Name
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_10  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Date of birth
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_11  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        E-mail
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_12  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Addresses
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_13  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Phone numbers
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_14     is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Actions
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div
+              class="el-table__fixed-body-wrapper"
+              style="top: 0px;"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="el-table__body"
+                style="width: 120px;"
+              >
+                <colgroup>
+                  <col
+                    name="el-table_1_column_8"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_9"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_10"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_11"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_12"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_13"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_14"
+                    width="120"
+                  />
+                </colgroup>
+                <tbody>
+                  <tr
+                    class="el-table__row"
+                  >
+                    <td
+                      class="el-table_1_column_8 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Bruno
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_9 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Rezende
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_10 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        12/03/1980
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_11 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul>
+                          <li>
+                            brunovianarezende@gmail.com
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_12 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul>
+                          <li>
+                            1373 George Avenue - Montgomery, AL, 36693
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_13 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul>
+                          <li>
+                            55-31-2515-5924
+                          </li>
+                          <li>
+                            55-31-99967-7424
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_14  "
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <a
+                          class="edit-contact-icon"
+                        >
+                          <svg
+                            class="fa-icon"
+                            color="green"
+                            height="32"
+                            role="presentation"
+                            style="font-size: 2em;"
+                            version="1.1"
+                            viewBox="0 0 1792 1792"
+                            width="32"
+                          >
+                            <path
+                              d="M888 1184l116-116-152-152-116 116v56h96v96h56zM1328 464q-16-16-33 1l-350 350q-17 17-1 33t33-1l350-350q17-17 1-33zM1408 1058v190q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-14 14-32 8-23-6-45-6h-832q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-126q0-13 9-22l64-64q15-15 35-7t20 29zM1312 320l288 288-672 672h-288v-288zM1756 452l-92 92-288-288 92-92q28-28 68-28t68 28l152 152q28 28 28 68t-28 68z"
+                            />
+                             
+    
+                            <!---->
+                          </svg>
+                        </a>
+                         
+                        <br />
+                         
+                        <a
+                          class="delete-contact-icon"
+                        >
+                          <svg
+                            aria-label="Delete"
+                            class="fa-icon"
+                            color="red"
+                            height="32"
+                            role="img"
+                            style="font-size: 2em;"
+                            version="1.1"
+                            viewBox="0 0 1408 1792"
+                            width="25.142857142857142"
+                          >
+                            <path
+                              d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                            />
+                             
+    
+                            <!---->
+                          </svg>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="el-table__row el-table__row--striped"
+                  >
+                    <td
+                      class="el-table_1_column_8 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Jose
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_9 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Anything
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_10 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        30/12/1975
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_11 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul>
+                          <li>
+                            jose@gmail.com
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_12 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul />
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_13 is-left  is-hidden"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <ul />
+                      </div>
+                    </td>
+                    <td
+                      class="el-table_1_column_14  "
+                    >
+                      <div
+                        class="cell"
+                      >
+                        <a
+                          class="edit-contact-icon"
+                        >
+                          <svg
+                            class="fa-icon"
+                            color="green"
+                            height="32"
+                            role="presentation"
+                            style="font-size: 2em;"
+                            version="1.1"
+                            viewBox="0 0 1792 1792"
+                            width="32"
+                          >
+                            <path
+                              d="M888 1184l116-116-152-152-116 116v56h96v96h56zM1328 464q-16-16-33 1l-350 350q-17 17-1 33t33-1l350-350q17-17 1-33zM1408 1058v190q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h832q63 0 117 25 15 7 18 23 3 17-9 29l-49 49q-14 14-32 8-23-6-45-6h-832q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-126q0-13 9-22l64-64q15-15 35-7t20 29zM1312 320l288 288-672 672h-288v-288zM1756 452l-92 92-288-288 92-92q28-28 68-28t68 28l152 152q28 28 28 68t-28 68z"
+                            />
+                             
+    
+                            <!---->
+                          </svg>
+                        </a>
+                         
+                        <br />
+                         
+                        <a
+                          class="delete-contact-icon"
+                        >
+                          <svg
+                            aria-label="Delete"
+                            class="fa-icon"
+                            color="red"
+                            height="32"
+                            role="img"
+                            style="font-size: 2em;"
+                            version="1.1"
+                            viewBox="0 0 1408 1792"
+                            width="25.142857142857142"
+                          >
+                            <path
+                              d="M1298 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                            />
+                             
+    
+                            <!---->
+                          </svg>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <!---->
+                </tbody>
+              </table>
+            </div>
+            <!---->
+          </div>
+          <div
+            class="el-table__fixed-right-patch"
+            style="width: 0px; height: 0px;"
+          />
           <div
             class="el-table__column-resize-proxy"
             style="display: none;"
@@ -363,6 +920,10 @@ exports[`ContactsList.vue should render the content correctly - with contacts 1`
 
 exports[`ContactsList.vue should render the content correctly - without contacts 1`] = `
 <div>
+  <!---->
+   
+  <!---->
+   
   <div
     class="el-row"
   >
@@ -385,12 +946,14 @@ exports[`ContactsList.vue should render the content correctly - without contacts
     >
       <div>
         <div
-          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden el-table--enable-row-hover"
+          class="el-table el-table--fit el-table--striped el-table--border el-table--hidden"
           style="width: 100%;"
         >
           <div
             class="hidden-columns"
           >
+            <div />
+             
             <div />
              
             <div />
@@ -411,7 +974,7 @@ exports[`ContactsList.vue should render the content correctly - without contacts
               cellpadding="0"
               cellspacing="0"
               class="el-table__header"
-              style="width: 480px;"
+              style="width: 600px;"
             >
               <colgroup>
                 <col
@@ -437,6 +1000,10 @@ exports[`ContactsList.vue should render the content correctly - without contacts
                 <col
                   name="el-table_1_column_6"
                   width="80"
+                />
+                <col
+                  name="el-table_1_column_7"
+                  width="120"
                 />
               </colgroup>
               <thead
@@ -511,6 +1078,17 @@ exports[`ContactsList.vue should render the content correctly - without contacts
                       Phone numbers
                     </div>
                   </th>
+                  <th
+                    class="el-table_1_column_7     is-hidden is-leaf"
+                    colspan="1"
+                    rowspan="1"
+                  >
+                    <div
+                      class="cell"
+                    >
+                      Actions
+                    </div>
+                  </th>
                 </tr>
               </thead>
             </table>
@@ -523,7 +1101,7 @@ exports[`ContactsList.vue should render the content correctly - without contacts
               cellpadding="0"
               cellspacing="0"
               class="el-table__body"
-              style="width: 480px;"
+              style="width: 600px;"
             >
               <colgroup>
                 <col
@@ -550,6 +1128,10 @@ exports[`ContactsList.vue should render the content correctly - without contacts
                   name="el-table_1_column_6"
                   width="80"
                 />
+                <col
+                  name="el-table_1_column_7"
+                  width="120"
+                />
               </colgroup>
               <tbody>
                 <!---->
@@ -557,7 +1139,7 @@ exports[`ContactsList.vue should render the content correctly - without contacts
             </table>
             <div
               class="el-table__empty-block"
-              style="width: 480px;"
+              style="width: 600px;"
             >
               <span
                 class="el-table__empty-text"
@@ -569,8 +1151,189 @@ exports[`ContactsList.vue should render the content correctly - without contacts
           </div>
           <!---->
           <!---->
-          <!---->
-          <!---->
+          <div
+            class="el-table__fixed-right"
+            style="width: 120px;"
+          >
+            <div
+              class="el-table__fixed-header-wrapper"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="el-table__header"
+                style="width: 120px;"
+              >
+                <colgroup>
+                  <col
+                    name="el-table_1_column_1"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_2"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_3"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_4"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_5"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_6"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_7"
+                    width="120"
+                  />
+                </colgroup>
+                <thead
+                  class=""
+                >
+                  <tr
+                    class=""
+                  >
+                    <th
+                      class="el-table_1_column_1  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        First name
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_2  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Last Name
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_3  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Date of birth
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_4  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        E-mail
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_5  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Addresses
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_6  is-left   is-hidden is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Phone numbers
+                      </div>
+                    </th>
+                    <th
+                      class="el-table_1_column_7     is-leaf"
+                      colspan="1"
+                      rowspan="1"
+                    >
+                      <div
+                        class="cell"
+                      >
+                        Actions
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div
+              class="el-table__fixed-body-wrapper"
+              style="top: 0px;"
+            >
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="el-table__body"
+                style="width: 120px;"
+              >
+                <colgroup>
+                  <col
+                    name="el-table_1_column_1"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_2"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_3"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_4"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_5"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_6"
+                    width="80"
+                  />
+                  <col
+                    name="el-table_1_column_7"
+                    width="120"
+                  />
+                </colgroup>
+                <tbody>
+                  <!---->
+                </tbody>
+              </table>
+            </div>
+            <!---->
+          </div>
+          <div
+            class="el-table__fixed-right-patch"
+            style="width: 0px; height: 0px;"
+          />
           <div
             class="el-table__column-resize-proxy"
             style="display: none;"

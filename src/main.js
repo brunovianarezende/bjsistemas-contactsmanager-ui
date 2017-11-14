@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import router from './router'
 import store from './store'
-import ElementUI from 'element-ui'
+import {registerGlobalComponents} from './utils'
 
 import App from './App'
 
-Vue.use(ElementUI)
+registerGlobalComponents()
 
 Vue.config.productionTip = false
 
