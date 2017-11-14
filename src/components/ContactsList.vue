@@ -89,8 +89,7 @@ import 'vue-awesome/icons/remove'
 import Icon from 'vue-awesome/components/Icon'
 import ContactEditModal from './ContactEdit'
 import ContactDeleteModal from './ContactDelete'
-
-const notEmpty = (l) => l.filter((i) => !!i)
+import { formatAddress } from './utils'
 
 export default {
   name: 'ContactsList',
@@ -99,17 +98,13 @@ export default {
   ]),
   methods: {
     formatAddress (address) {
-      const lines = [
-        address.street,
-        notEmpty([address.city, address.state, address.zipCode]).join(', ')
-      ]
-      return notEmpty(lines).join(' - ')
+      return formatAddress(address, ' - ')
     },
     editContact (contact) {
       this.$modal.show('contact-edit-modal')
     },
     deleteContact (contact) {
-      this.$modal.show('contact-delete-modal')
+      this.$modal.show('contact-delete-modal', { contact })
     }
   },
   components: {

@@ -2,14 +2,9 @@ import Vue from 'vue'
 import ContactsList from '@/components/ContactsList'
 import {buildStore} from '@/store'
 import {registerGlobalComponents} from '@/utils'
+import {simulateClick} from './utils'
 
 registerGlobalComponents()
-
-const simulateClick = (vm, button) => {
-  const clickEvent = new window.Event('click')
-  button.dispatchEvent(clickEvent)
-  vm._watcher.run()
-}
 
 describe('ContactsList.vue', () => {
   it('should render the content correctly - without contacts', () => {
@@ -63,6 +58,8 @@ describe('ContactsList.vue', () => {
         return Vue.nextTick()
       })
       .then(() => {
+        // NOTE: this selector won't return the full modal code, probably due to
+        // transition issues.
         const selector = 'div[data-modal="contact-edit-modal"]'
         const modal = vm.$el.querySelector(selector)
         expect(modal).toEqual(expect.anything())
