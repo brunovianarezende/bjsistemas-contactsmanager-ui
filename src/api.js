@@ -12,6 +12,10 @@ class TempApi {
   deleteContact (id) {
     return Promise.resolve(true)
   }
+
+  editContact (contact) {
+    return Promise.resolve(true)
+  }
 }
 
 export const buildApi = () => {

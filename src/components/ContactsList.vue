@@ -101,7 +101,7 @@ export default {
       return formatAddress(address, ' - ')
     },
     editContact (contact) {
-      this.$modal.show('contact-edit-modal')
+      this.$modal.show('contact-edit-modal', { contact })
     },
     deleteContact (contact) {
       this.$modal.show('contact-delete-modal', { contact })

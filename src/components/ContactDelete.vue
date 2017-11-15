@@ -11,10 +11,12 @@
     <p>Are you sure you want to delete this contact?</p>
     <div class="contact-info">
       <div>
-        <b>Name: {{name}}</b>
+        <b>Name:</b>
+        {{name}}
       </div>
       <div>
-        <b>Date of birth: {{contact.birthDate}}</b>
+        <b>Date of birth:</b>
+        {{contact.birthDate}}
       </div>
       <div>
         <b>E-mail:</b>
@@ -57,7 +59,7 @@ export default {
   name: 'ContactDeleteModal',
   data () {
     return {
-      contact: {},
+      contact: {}
     }
   },
   methods: {
@@ -67,18 +69,18 @@ export default {
     formatFirstLine,
     formatSecondLine,
     onNoButtonClick () {
-      this.$modal.hide('contact-delete-modal');
+      this.$modal.hide('contact-delete-modal')
     },
     onYesButtonClick () {
       this.$store.dispatch('deleteContact', this.contact.id)
-      this.$modal.hide('contact-delete-modal');
+        .then(() => this.$modal.hide('contact-delete-modal'))
     },
-    _visible() {
+    _visible () {
       return this.$refs._hackfortest.visible
     }
   },
   computed: {
-    name: function() {
+    name: function () {
       return notEmpty([this.contact.firstname, this.contact.lastname]).join(' ')
     }
   }

@@ -12,6 +12,12 @@ export const buildStore = (contacts = []) => {
     mutations: {
       deleteContact (state, payload) {
         state.contacts = state.contacts.filter((i) => i.id !== payload)
+      },
+      editContact (state, payload) {
+        const index = state.contacts.findIndex((i) => i.id === payload.id)
+        if (index !== -1) {
+          state.contacts.splice(index, 1, payload)
+        }
       }
     },
     actions: {
@@ -20,12 +26,18 @@ export const buildStore = (contacts = []) => {
           .then(() => {
             context.commit('deleteContact', payload)
           })
+      },
+      editContact (context, payload) {
+        getApi().editContact(payload)
+          .then(() => {
+            context.commit('editContact', payload)
+          })
       }
     }
   })
 }
 
 export default buildStore([
-  {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '12/03/1980', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']},
-  {id: 2, firstname: 'Jose', lastname: 'Anything', birthDate: '30/12/1975', addresses: [], emails: ['jose@gmail.com'], 'phoneNumbers': []}
+  {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '1980-03-12', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']},
+  {id: 2, firstname: 'Jose', lastname: 'Anything', birthDate: '1975-12-30', addresses: [], emails: ['jose@gmail.com'], 'phoneNumbers': []}
 ])
