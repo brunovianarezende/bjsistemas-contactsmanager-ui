@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     beforeOpen (event) {
-      const contact = event.params.contact
+      const contact = {...event.params.contact}
       // hack to put the date in current timezone, otherwise the component will
       // treat it as a date in UTC and it may show the day as being the day
       // before, e.g., if you are in offset -3, 1980-03-12 will show as
@@ -45,8 +45,10 @@ export default {
     },
     onSaveButtonClick () {
       const contact = this.contact
-      // return birthDate back to a string
-      contact.birthDate = contact.birthDate.toISOString().substring(0, 10)
+      if (contact.birthDate) {
+        // return birthDate back to a string
+        contact.birthDate = contact.birthDate.toISOString().substring(0, 10)
+      }
 
       this.$store.dispatch('editContact', contact)
         .then(() => this.$modal.hide('contact-edit-modal'))
