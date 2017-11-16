@@ -21,6 +21,9 @@ export const buildStore = (contacts = []) => {
         if (index !== -1) {
           state.contacts.splice(index, 1, payload)
         }
+      },
+      setContacts (state, payload) {
+        state.contacts = payload
       }
     },
     actions: {
@@ -42,12 +45,18 @@ export const buildStore = (contacts = []) => {
             const newContact = {...payload, id}
             context.commit('addContact', newContact)
           })
+      },
+      searchContacts (context, payload) {
+        getApi().searchContacts(payload)
+          .then((result) => {
+            context.commit('setContacts', result.objects)
+          })
+      },
+      hydrate (context, payload) {
+        return context.dispatch('searchContacts', {firstname: '', lastname: ''})
       }
     }
   })
 }
 
-export default buildStore([
-  {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '1980-03-12', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']},
-  {id: 2, firstname: 'Jose', lastname: 'Anything', birthDate: '1975-12-30', addresses: [], emails: ['jose@gmail.com'], 'phoneNumbers': []}
-])
+export default buildStore([])

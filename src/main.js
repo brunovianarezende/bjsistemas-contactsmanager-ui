@@ -10,6 +10,8 @@ registerGlobalComponents()
 
 setApi(buildApi())
 
+store.dispatch('hydrate')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

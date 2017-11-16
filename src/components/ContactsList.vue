@@ -8,6 +8,20 @@
     </el-row>
     <el-row>
       <el-col :span="24">
+        <div class="search-options">
+          <el-form :inline="true" :model="search">
+            <el-form-item label="First name">
+              <el-input @input="updateSearchFirstName" />
+            </el-form-item>
+            <el-form-item label="Last name">
+              <el-input @input="updateSearchLastName" />
+            </el-form-item>
+          </el-form>
+        </div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
         <div>
           <el-table
             :data="contacts"
@@ -89,6 +103,7 @@ import 'vue-awesome/icons/plus-circle'
 import 'vue-awesome/icons/edit'
 import 'vue-awesome/icons/remove'
 import Icon from 'vue-awesome/components/Icon'
+import debounce from 'lodash.debounce'
 import ContactAddModal from './ContactAdd'
 import ContactEditModal from './ContactEdit'
 import ContactDeleteModal from './ContactDelete'
@@ -96,6 +111,14 @@ import { formatAddress } from './utils'
 
 export default {
   name: 'ContactsList',
+  data () {
+    return {
+      search: {
+        firstname: '',
+        lastname: ''
+      }
+    }
+  },
   computed: mapState([
     'contacts'
   ]),
@@ -111,6 +134,17 @@ export default {
     },
     deleteContact (contact) {
       this.$modal.show('contact-delete-modal', { contact })
+    },
+    updateSearchFirstName: debounce(function (value) {
+      this.search.firstname = value
+      this.doSearch()
+    }, 500),
+    updateSearchLastName: debounce(function (value) {
+      this.search.lastname = value
+      this.doSearch()
+    }, 500),
+    doSearch () {
+      this.$store.dispatch('searchContacts', this.search)
     }
   },
   components: {
