@@ -16,6 +16,25 @@ describe('store.js', () => {
       })
     })
 
+    describe('addContact', () => {
+      it('should add new contact', () => {
+        const obj1 = {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '1980-03-12', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']}
+        const obj2 = {id: 2, firstname: 'Jose', lastname: 'Anything', birthDate: '1975-12-30', addresses: [], emails: ['jose@gmail.com'], 'phoneNumbers': []}
+        const store = buildStore([
+          obj1, obj2
+        ])
+
+        const newObj = {
+          ...obj2,
+          firstname: 'New name'
+        }
+        delete newObj.id
+
+        store.commit('addContact', newObj)
+        expect(store.state.contacts).toEqual([newObj, obj1, obj2])
+      })
+    })
+
     describe('editContact', () => {
       it('should edit existing contact', () => {
         const obj1 = {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '1980-03-12', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']}
@@ -94,6 +113,31 @@ describe('store.js', () => {
             expect(api.editContact.mock.calls).toEqual([[newObj]])
           })
       })
+    })
+  })
+
+  describe('addContact', () => {
+    it('should call the API and, if all is ok, add the new contact to the store', () => {
+      const api = new function () {
+        this.addContact = jest.fn((contact) => Promise.resolve(157))
+      }()
+      setApi(api)
+
+      const obj1 = {id: 1, firstname: 'Bruno', lastname: 'Rezende', birthDate: '1980-03-12', addresses: [{street: '1373 George Avenue', city: 'Montgomery', state: 'AL', zipCode: '36693'}], emails: ['brunovianarezende@gmail.com'], 'phoneNumbers': ['55-31-2515-5924', '55-31-99967-7424']}
+      const obj2 = {id: 2, firstname: 'Jose', lastname: 'Anything', birthDate: '1975-12-30', addresses: [], emails: ['jose@gmail.com'], 'phoneNumbers': []}
+      const store = buildStore([
+        obj1, obj2
+      ])
+
+      const newObj = {...obj1, name: 'New'}
+      delete newObj.id
+
+      return store.dispatch('addContact', newObj)
+        .then(() => {
+          const added = {...newObj, id: 157}
+          expect(store.state.contacts).toEqual([added, obj1, obj2])
+          expect(api.addContact.mock.calls).toEqual([[newObj]])
+        })
     })
   })
 })

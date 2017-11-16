@@ -1,9 +1,10 @@
 <template>
   <div>
+    <contact-add-modal />
     <contact-edit-modal />
     <contact-delete-modal />
     <el-row>
-      <el-col :span="24"><div><h1>Contacts</h1></div></el-col>
+      <el-col :span="24"><div><h1>Contacts <a class="add-contact-icon" v-on:click="addContact()"><icon class="add-icon" name="plus-circle" scale="2" color="green" /></a></h1></div></el-col>
     </el-row>
     <el-row>
       <el-col :span="24">
@@ -84,9 +85,11 @@
 
 <script>
 import { mapState } from 'vuex'
+import 'vue-awesome/icons/plus-circle'
 import 'vue-awesome/icons/edit'
 import 'vue-awesome/icons/remove'
 import Icon from 'vue-awesome/components/Icon'
+import ContactAddModal from './ContactAdd'
 import ContactEditModal from './ContactEdit'
 import ContactDeleteModal from './ContactDelete'
 import { formatAddress } from './utils'
@@ -100,6 +103,9 @@ export default {
     formatAddress (address) {
       return formatAddress(address, ' - ')
     },
+    addContact () {
+      this.$modal.show('contact-add-modal')
+    },
     editContact (contact) {
       this.$modal.show('contact-edit-modal', { contact })
     },
@@ -108,13 +114,16 @@ export default {
     }
   },
   components: {
-    Icon, ContactEditModal, ContactDeleteModal
+    Icon, ContactAddModal, ContactEditModal, ContactDeleteModal
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import url("//unpkg.com/element-ui@2.0.4/lib/theme-chalk/index.css");
+.add-contact-icon {
+  position: relative;
+}
 .el-row {
   margin-bottom: 20px;
   &:last-child {
@@ -126,5 +135,15 @@ export default {
 }
 .fa-icon {
   cursor: pointer;
+}
+.add-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 10px;
+  margin: auto;
+  text-align: center;
 }
 </style>

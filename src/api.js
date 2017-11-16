@@ -16,6 +16,10 @@ class TempApi {
   editContact (contact) {
     return Promise.resolve(true)
   }
+
+  addContact (contact) {
+    return Promise.resolve(157)
+  }
 }
 
 export const buildApi = () => {

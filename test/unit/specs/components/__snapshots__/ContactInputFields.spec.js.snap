@@ -1,0 +1,765 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactInputFields.vue should render the content correctly when a contact is given 1`] = `
+<form
+  class="el-form"
+>
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      First name
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-input"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          rows="2"
+          type="text"
+          validateevent="true"
+        />
+        <!---->
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      Last name
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-input"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          rows="2"
+          type="text"
+          validateevent="true"
+        />
+        <!---->
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      Date of birth
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date"
+        formatvalue="yyyy-MM-dd"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          id=""
+          name=""
+          placeholder="Pick a day"
+          prefixicon="el-icon-date"
+          rows="2"
+          size=""
+          type="text"
+        />
+        <span
+          class="el-input__prefix"
+        >
+          <i
+            class="el-input__icon el-icon-date"
+          />
+        </span>
+        <span
+          class="el-input__suffix"
+        >
+          <span
+            class="el-input__suffix-inner"
+          >
+            <i
+              class="el-input__icon"
+            />
+            <!---->
+          </span>
+          <!---->
+        </span>
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <!---->
+    <div
+      class="el-form-item__content"
+    >
+      <label
+        class="el-form-item__label no-float"
+      >
+        E-mails
+      </label>
+       
+      <ul>
+        <li>
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+        </li>
+        <li>
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+        </li>
+         
+        <div
+          class="add-item"
+        >
+          <svg
+            class="fa-icon"
+            color="green"
+            height="32"
+            role="presentation"
+            style="font-size: 2em;"
+            version="1.1"
+            viewBox="0 0 1536 1792"
+            width="27.428571428571427"
+          >
+            <path
+              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+            />
+             
+    
+            <!---->
+          </svg>
+        </div>
+      </ul>
+      <!---->
+    </div>
+  </div>
+   
+  <fieldset>
+    <legend>
+      Addresses
+    </legend>
+     
+    <div>
+      <span
+        class="delete-address"
+      >
+        <svg
+          class="fa-icon"
+          color="red"
+          height="32"
+          role="presentation"
+          style="font-size: 2em;"
+          version="1.1"
+          viewBox="0 0 1536 1792"
+          width="27.428571428571427"
+        >
+          <path
+            d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          />
+           
+    
+          <!---->
+        </svg>
+      </span>
+       
+      <fieldset>
+        <div
+          class="el-form-item"
+        >
+          <label
+            class="el-form-item__label"
+          >
+            Street
+          </label>
+          <div
+            class="el-form-item__content"
+          >
+            <div
+              class="el-input"
+            >
+              <!---->
+              <input
+                autocomplete="off"
+                class="el-input__inner"
+                rows="2"
+                type="text"
+                validateevent="true"
+              />
+              <!---->
+              <!---->
+              <!---->
+            </div>
+            <!---->
+          </div>
+        </div>
+         
+        <div
+          class="inline"
+        >
+          <div
+            class="el-form-item"
+          >
+            <label
+              class="el-form-item__label"
+            >
+              City
+            </label>
+            <div
+              class="el-form-item__content"
+            >
+              <div
+                class="el-input"
+              >
+                <!---->
+                <input
+                  autocomplete="off"
+                  class="el-input__inner"
+                  rows="2"
+                  type="text"
+                  validateevent="true"
+                />
+                <!---->
+                <!---->
+                <!---->
+              </div>
+              <!---->
+            </div>
+          </div>
+           
+          <div
+            class="el-form-item"
+          >
+            <label
+              class="el-form-item__label"
+            >
+              State
+            </label>
+            <div
+              class="el-form-item__content"
+            >
+              <div
+                class="el-input"
+              >
+                <!---->
+                <input
+                  autocomplete="off"
+                  class="el-input__inner"
+                  rows="2"
+                  type="text"
+                  validateevent="true"
+                />
+                <!---->
+                <!---->
+                <!---->
+              </div>
+              <!---->
+            </div>
+          </div>
+           
+          <div
+            class="el-form-item"
+          >
+            <label
+              class="el-form-item__label"
+            >
+              Zipcode
+            </label>
+            <div
+              class="el-form-item__content"
+            >
+              <div
+                class="el-input"
+              >
+                <!---->
+                <input
+                  autocomplete="off"
+                  class="el-input__inner"
+                  rows="2"
+                  type="text"
+                  validateevent="true"
+                />
+                <!---->
+                <!---->
+                <!---->
+              </div>
+              <!---->
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+     
+    <div
+      class="add-item"
+    >
+      <svg
+        class="fa-icon"
+        color="green"
+        height="32"
+        role="presentation"
+        style="font-size: 2em;"
+        version="1.1"
+        viewBox="0 0 1536 1792"
+        width="27.428571428571427"
+      >
+        <path
+          d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+        />
+         
+    
+        <!---->
+      </svg>
+    </div>
+  </fieldset>
+   
+  <div
+    class="el-form-item"
+  >
+    <!---->
+    <div
+      class="el-form-item__content"
+    >
+      <label
+        class="el-form-item__label no-float"
+      >
+        Phone numbers
+      </label>
+       
+      <ul>
+        <li>
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+        </li>
+        <li>
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+        </li>
+         
+        <div
+          class="add-item"
+        >
+          <svg
+            class="fa-icon"
+            color="green"
+            height="32"
+            role="presentation"
+            style="font-size: 2em;"
+            version="1.1"
+            viewBox="0 0 1536 1792"
+            width="27.428571428571427"
+          >
+            <path
+              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+            />
+             
+    
+            <!---->
+          </svg>
+        </div>
+      </ul>
+      <!---->
+    </div>
+  </div>
+</form>
+`;
+
+exports[`ContactInputFields.vue should render the content correctly when no contact is given 1`] = `
+<form
+  class="el-form"
+>
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      First name
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-input"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          rows="2"
+          type="text"
+          validateevent="true"
+        />
+        <!---->
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      Last name
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-input"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          rows="2"
+          type="text"
+          validateevent="true"
+        />
+        <!---->
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <label
+      class="el-form-item__label"
+    >
+      Date of birth
+    </label>
+    <div
+      class="el-form-item__content"
+    >
+      <div
+        class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date"
+        formatvalue="yyyy-MM-dd"
+      >
+        <!---->
+        <input
+          autocomplete="off"
+          class="el-input__inner"
+          id=""
+          name=""
+          placeholder="Pick a day"
+          prefixicon="el-icon-date"
+          rows="2"
+          size=""
+          type="text"
+        />
+        <span
+          class="el-input__prefix"
+        >
+          <i
+            class="el-input__icon el-icon-date"
+          />
+        </span>
+        <span
+          class="el-input__suffix"
+        >
+          <span
+            class="el-input__suffix-inner"
+          >
+            <i
+              class="el-input__icon"
+            />
+            <!---->
+          </span>
+          <!---->
+        </span>
+        <!---->
+      </div>
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="el-form-item"
+  >
+    <!---->
+    <div
+      class="el-form-item__content"
+    >
+      <label
+        class="el-form-item__label no-float"
+      >
+        E-mails
+      </label>
+       
+      <ul>
+         
+        <div
+          class="add-item"
+        >
+          <svg
+            class="fa-icon"
+            color="green"
+            height="32"
+            role="presentation"
+            style="font-size: 2em;"
+            version="1.1"
+            viewBox="0 0 1536 1792"
+            width="27.428571428571427"
+          >
+            <path
+              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+            />
+             
+    
+            <!---->
+          </svg>
+        </div>
+      </ul>
+      <!---->
+    </div>
+  </div>
+   
+  <fieldset>
+    <legend>
+      Addresses
+    </legend>
+      
+    <div
+      class="add-item"
+    >
+      <svg
+        class="fa-icon"
+        color="green"
+        height="32"
+        role="presentation"
+        style="font-size: 2em;"
+        version="1.1"
+        viewBox="0 0 1536 1792"
+        width="27.428571428571427"
+      >
+        <path
+          d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+        />
+         
+    
+        <!---->
+      </svg>
+    </div>
+  </fieldset>
+   
+  <div
+    class="el-form-item"
+  >
+    <!---->
+    <div
+      class="el-form-item__content"
+    >
+      <label
+        class="el-form-item__label no-float"
+      >
+        Phone numbers
+      </label>
+       
+      <ul>
+         
+        <div
+          class="add-item"
+        >
+          <svg
+            class="fa-icon"
+            color="green"
+            height="32"
+            role="presentation"
+            style="font-size: 2em;"
+            version="1.1"
+            viewBox="0 0 1536 1792"
+            width="27.428571428571427"
+          >
+            <path
+              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+            />
+             
+    
+            <!---->
+          </svg>
+        </div>
+      </ul>
+      <!---->
+    </div>
+  </div>
+</form>
+`;

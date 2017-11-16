@@ -13,6 +13,9 @@ export const buildStore = (contacts = []) => {
       deleteContact (state, payload) {
         state.contacts = state.contacts.filter((i) => i.id !== payload)
       },
+      addContact (state, payload) {
+        state.contacts.splice(0, 0, payload)
+      },
       editContact (state, payload) {
         const index = state.contacts.findIndex((i) => i.id === payload.id)
         if (index !== -1) {
@@ -31,6 +34,13 @@ export const buildStore = (contacts = []) => {
         getApi().editContact(payload)
           .then(() => {
             context.commit('editContact', payload)
+          })
+      },
+      addContact (context, payload) {
+        getApi().addContact(payload)
+          .then((id) => {
+            const newContact = {...payload, id}
+            context.commit('addContact', newContact)
           })
       }
     }
