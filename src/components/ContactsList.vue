@@ -42,6 +42,9 @@
               align="left"
               prop="birthDate"
               label="Date of birth">
+              <template slot-scope="scope">
+                {{formatDate(scope.row.birthDate)}}
+              </template>
             </el-table-column>
             <el-table-column
               align="left"
@@ -107,7 +110,7 @@ import debounce from 'lodash.debounce'
 import ContactAddModal from './ContactAdd'
 import ContactEditModal from './ContactEdit'
 import ContactDeleteModal from './ContactDelete'
-import { formatAddress } from './utils'
+import { formatAddress, formatDate } from './utils'
 
 export default {
   name: 'ContactsList',
@@ -123,6 +126,7 @@ export default {
     'contacts'
   ]),
   methods: {
+    formatDate,
     formatAddress (address) {
       return formatAddress(address, ' - ')
     },

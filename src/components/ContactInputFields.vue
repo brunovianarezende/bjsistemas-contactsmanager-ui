@@ -17,23 +17,18 @@
     </el-form-item>
     <el-form-item prop="emails">
       <label class="el-form-item__label no-float">E-mails</label>
-        <ul>
-          <li
-            v-for="(email, index) in contactObj.emails"
-            :key="index"
-          >
-            <el-form-item
-              :prop="`emails.${index}`"
-              :rules="emailRules"
-            >
-              <el-input class="email-input" v-model="contactObj.emails[index]"></el-input>
-              <span class="delete-item" v-on:click="onRemoveEmail(index)"><icon scale="2" name="minus-circle" color="red" /></span>
-            </el-form-item>
-          </li>
-          <div class="add-item" v-on:click="onAddEmail">
-            <icon name="plus-circle" scale="2" color="green" />
-          </div>
-        </ul>
+      <el-form-item
+        v-for="(email, index) in contactObj.emails"
+        :key="index"
+        :prop="`emails.${index}`"
+        :rules="emailRules"
+      >
+        <el-input class="email-input" v-model="contactObj.emails[index]"></el-input>
+        <span class="delete-item" v-on:click="onRemoveEmail(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+      </el-form-item>
+      <div class="add-item" v-on:click="onAddEmail">
+        <icon name="plus-circle" scale="2" color="green" />
+      </div>
     </el-form-item>
     <fieldset>
       <legend>Addresses</legend>
@@ -42,7 +37,7 @@
       >
         <div :key="index">
           <span class="delete-address" v-on:click="onRemoveAddress(index)"><icon name="minus-circle" scale="2" color="red" /></span>
-          <edit-address :address="address" />
+          <edit-address :address="address" :base-prop-id="`addresses.${index}`" />
         </div>
       </template>
       <div class="add-item" v-on:click="onAddAddress">
@@ -51,23 +46,18 @@
     </fieldset>
     <el-form-item prop="phoneNumbers">
       <label class="el-form-item__label no-float">Phone numbers</label>
-        <ul>
-          <li
-            v-for="(phoneNumber, index) in contactObj.phoneNumbers"
-            :key="index"
-          >
-            <el-form-item
-              :prop="`phoneNumbers.${index}`"
-              :rules="phoneNumberRules"
-            >
-              <el-input class="email-input" v-model="contactObj.phoneNumbers[index]"></el-input>
-              <span class="delete-item" v-on:click="onRemovePhoneNumber(index)"><icon scale="2" name="minus-circle" color="red" /></span>
-            </el-form-item>
-          </li>
-          <div class="add-item" v-on:click="onAddPhoneNumber">
-            <icon name="plus-circle" scale="2" color="green" />
-          </div>
-        </ul>
+      <el-form-item
+        v-for="(phoneNumber, index) in contactObj.phoneNumbers"
+        :key="index"
+        :prop="`phoneNumbers.${index}`"
+        :rules="phoneNumberRules"
+      >
+        <el-input class="email-input" v-model="contactObj.phoneNumbers[index]"></el-input>
+        <span class="delete-item" v-on:click="onRemovePhoneNumber(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+      </el-form-item>
+    <div class="add-item" v-on:click="onAddPhoneNumber">
+      <icon name="plus-circle" scale="2" color="green" />
+    </div>
     </el-form-item>
   </el-form>
 </template>
@@ -166,5 +156,8 @@ export default {
 }
 .no-float {
   float: none;
+}
+.el-form-item .el-form-item {
+  margin-bottom: 22px;
 }
 </style>

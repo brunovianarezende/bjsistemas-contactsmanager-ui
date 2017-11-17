@@ -5,10 +5,11 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
   class="el-form"
 >
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="firstname"
     >
       First name
     </label>
@@ -35,10 +36,11 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="lastname"
     >
       Last name
     </label>
@@ -65,10 +67,11 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="birthDate"
     >
       Date of birth
     </label>
@@ -118,7 +121,7 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <!---->
     <div
@@ -130,108 +133,122 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
         E-mails
       </label>
        
-      <ul>
-        <li>
-          <div
-            class="email-input el-input"
-          >
-            <!---->
-            <input
-              autocomplete="off"
-              class="el-input__inner"
-              rows="2"
-              type="text"
-              validateevent="true"
-            />
-            <!---->
-            <!---->
-            <!---->
-          </div>
-           
-          <span
-            class="delete-item"
-          >
-            <svg
-              class="fa-icon"
-              color="red"
-              height="32"
-              role="presentation"
-              style="font-size: 2em;"
-              version="1.1"
-              viewBox="0 0 1536 1792"
-              width="27.428571428571427"
-            >
-              <path
-                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-              />
-               
-    
-              <!---->
-            </svg>
-          </span>
-        </li>
-        <li>
-          <div
-            class="email-input el-input"
-          >
-            <!---->
-            <input
-              autocomplete="off"
-              class="el-input__inner"
-              rows="2"
-              type="text"
-              validateevent="true"
-            />
-            <!---->
-            <!---->
-            <!---->
-          </div>
-           
-          <span
-            class="delete-item"
-          >
-            <svg
-              class="fa-icon"
-              color="red"
-              height="32"
-              role="presentation"
-              style="font-size: 2em;"
-              version="1.1"
-              viewBox="0 0 1536 1792"
-              width="27.428571428571427"
-            >
-              <path
-                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-              />
-               
-    
-              <!---->
-            </svg>
-          </span>
-        </li>
-         
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
         <div
-          class="add-item"
+          class="el-form-item__content"
         >
-          <svg
-            class="fa-icon"
-            color="green"
-            height="32"
-            role="presentation"
-            style="font-size: 2em;"
-            version="1.1"
-            viewBox="0 0 1536 1792"
-            width="27.428571428571427"
+          <div
+            class="email-input el-input"
           >
-            <path
-              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-            />
-             
-    
             <!---->
-          </svg>
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+          <!---->
         </div>
-      </ul>
+      </div>
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="add-item"
+      >
+        <svg
+          class="fa-icon"
+          color="green"
+          height="32"
+          role="presentation"
+          style="font-size: 2em;"
+          version="1.1"
+          viewBox="0 0 1536 1792"
+          width="27.428571428571427"
+        >
+          <path
+            d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          />
+           
+    
+          <!---->
+        </svg>
+      </div>
       <!---->
     </div>
   </div>
@@ -266,10 +283,11 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
        
       <fieldset>
         <div
-          class="el-form-item"
+          class="el-form-item is-required"
         >
           <label
             class="el-form-item__label"
+            for="addresses.0.street"
           >
             Street
           </label>
@@ -299,10 +317,11 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
           class="inline"
         >
           <div
-            class="el-form-item"
+            class="el-form-item is-required"
           >
             <label
               class="el-form-item__label"
+              for="addresses.0.city"
             >
               City
             </label>
@@ -415,7 +434,7 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
   </fieldset>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <!---->
     <div
@@ -427,108 +446,122 @@ exports[`ContactInputFields.vue should render the content correctly when a conta
         Phone numbers
       </label>
        
-      <ul>
-        <li>
-          <div
-            class="email-input el-input"
-          >
-            <!---->
-            <input
-              autocomplete="off"
-              class="el-input__inner"
-              rows="2"
-              type="text"
-              validateevent="true"
-            />
-            <!---->
-            <!---->
-            <!---->
-          </div>
-           
-          <span
-            class="delete-item"
-          >
-            <svg
-              class="fa-icon"
-              color="red"
-              height="32"
-              role="presentation"
-              style="font-size: 2em;"
-              version="1.1"
-              viewBox="0 0 1536 1792"
-              width="27.428571428571427"
-            >
-              <path
-                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-              />
-               
-    
-              <!---->
-            </svg>
-          </span>
-        </li>
-        <li>
-          <div
-            class="email-input el-input"
-          >
-            <!---->
-            <input
-              autocomplete="off"
-              class="el-input__inner"
-              rows="2"
-              type="text"
-              validateevent="true"
-            />
-            <!---->
-            <!---->
-            <!---->
-          </div>
-           
-          <span
-            class="delete-item"
-          >
-            <svg
-              class="fa-icon"
-              color="red"
-              height="32"
-              role="presentation"
-              style="font-size: 2em;"
-              version="1.1"
-              viewBox="0 0 1536 1792"
-              width="27.428571428571427"
-            >
-              <path
-                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-              />
-               
-    
-              <!---->
-            </svg>
-          </span>
-        </li>
-         
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
         <div
-          class="add-item"
+          class="el-form-item__content"
         >
-          <svg
-            class="fa-icon"
-            color="green"
-            height="32"
-            role="presentation"
-            style="font-size: 2em;"
-            version="1.1"
-            viewBox="0 0 1536 1792"
-            width="27.428571428571427"
+          <div
+            class="email-input el-input"
           >
-            <path
-              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-            />
-             
-    
             <!---->
-          </svg>
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+          <!---->
         </div>
-      </ul>
+      </div>
+      <div
+        class="el-form-item is-required"
+      >
+        <!---->
+        <div
+          class="el-form-item__content"
+        >
+          <div
+            class="email-input el-input"
+          >
+            <!---->
+            <input
+              autocomplete="off"
+              class="el-input__inner"
+              rows="2"
+              type="text"
+              validateevent="true"
+            />
+            <!---->
+            <!---->
+            <!---->
+          </div>
+           
+          <span
+            class="delete-item"
+          >
+            <svg
+              class="fa-icon"
+              color="red"
+              height="32"
+              role="presentation"
+              style="font-size: 2em;"
+              version="1.1"
+              viewBox="0 0 1536 1792"
+              width="27.428571428571427"
+            >
+              <path
+                d="M1216 960v-128q0-26-19-45t-45-19h-768q-26 0-45 19t-19 45v128q0 26 19 45t45 19h768q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+              />
+               
+    
+              <!---->
+            </svg>
+          </span>
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="add-item"
+      >
+        <svg
+          class="fa-icon"
+          color="green"
+          height="32"
+          role="presentation"
+          style="font-size: 2em;"
+          version="1.1"
+          viewBox="0 0 1536 1792"
+          width="27.428571428571427"
+        >
+          <path
+            d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          />
+           
+    
+          <!---->
+        </svg>
+      </div>
       <!---->
     </div>
   </div>
@@ -540,10 +573,11 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
   class="el-form"
 >
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="firstname"
     >
       First name
     </label>
@@ -570,10 +604,11 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="lastname"
     >
       Last name
     </label>
@@ -600,10 +635,11 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <label
       class="el-form-item__label"
+      for="birthDate"
     >
       Date of birth
     </label>
@@ -653,7 +689,7 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
   </div>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <!---->
     <div
@@ -664,31 +700,28 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
       >
         E-mails
       </label>
-       
-      <ul>
-         
-        <div
-          class="add-item"
+        
+      <div
+        class="add-item"
+      >
+        <svg
+          class="fa-icon"
+          color="green"
+          height="32"
+          role="presentation"
+          style="font-size: 2em;"
+          version="1.1"
+          viewBox="0 0 1536 1792"
+          width="27.428571428571427"
         >
-          <svg
-            class="fa-icon"
-            color="green"
-            height="32"
-            role="presentation"
-            style="font-size: 2em;"
-            version="1.1"
-            viewBox="0 0 1536 1792"
-            width="27.428571428571427"
-          >
-            <path
-              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-            />
-             
+          <path
+            d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          />
+           
     
-            <!---->
-          </svg>
-        </div>
-      </ul>
+          <!---->
+        </svg>
+      </div>
       <!---->
     </div>
   </div>
@@ -722,7 +755,7 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
   </fieldset>
    
   <div
-    class="el-form-item"
+    class="el-form-item is-required"
   >
     <!---->
     <div
@@ -733,31 +766,28 @@ exports[`ContactInputFields.vue should render the content correctly when no cont
       >
         Phone numbers
       </label>
-       
-      <ul>
-         
-        <div
-          class="add-item"
+        
+      <div
+        class="add-item"
+      >
+        <svg
+          class="fa-icon"
+          color="green"
+          height="32"
+          role="presentation"
+          style="font-size: 2em;"
+          version="1.1"
+          viewBox="0 0 1536 1792"
+          width="27.428571428571427"
         >
-          <svg
-            class="fa-icon"
-            color="green"
-            height="32"
-            role="presentation"
-            style="font-size: 2em;"
-            version="1.1"
-            viewBox="0 0 1536 1792"
-            width="27.428571428571427"
-          >
-            <path
-              d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-            />
-             
+          <path
+            d="M1216 960v-128q0-26-19-45t-45-19h-256v-256q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v256h-256q-26 0-45 19t-19 45v128q0 26 19 45t45 19h256v256q0 26 19 45t45 19h128q26 0 45-19t19-45v-256h256q26 0 45-19t19-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          />
+           
     
-            <!---->
-          </svg>
-        </div>
-      </ul>
+          <!---->
+        </svg>
+      </div>
       <!---->
     </div>
   </div>

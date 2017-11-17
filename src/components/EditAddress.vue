@@ -1,10 +1,18 @@
 <template>
 <fieldset>
-  <el-form-item label="Street">
+  <el-form-item
+    label="Street"
+    :prop="`${basePropId}.street`"
+    :rules="rules.street"
+    >
     <el-input v-model="address.street" />
   </el-form-item>
   <div class="inline">
-    <el-form-item label="City">
+    <el-form-item
+      label="City"
+      :prop="`${basePropId}.city`"
+      :rules="rules.city"
+      >
       <el-input v-model="address.city" />
     </el-form-item>
     <el-form-item label="State">
@@ -20,7 +28,15 @@
 <script>
 export default {
   name: 'EditAddress',
-  props: ['address']
+  props: ['address', 'basePropId'],
+  data () {
+    return {
+      rules: {
+        street: { required: true, whitespace: true, message: 'Street is required', trigger: 'blur' },
+        city: { required: true, whitespace: true, message: 'City is required', trigger: 'blur' }
+      }
+    }
+  }
 }
 </script>
 

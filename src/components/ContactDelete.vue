@@ -16,7 +16,7 @@
       </div>
       <div>
         <b>Date of birth:</b>
-        {{contact.birthDate}}
+        {{formatDate(contact.birthDate)}}
       </div>
       <div>
         <b>E-mail:</b>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import { notEmpty, formatFirstLine, formatSecondLine } from './utils'
+import { notEmpty, formatFirstLine, formatSecondLine, formatDate } from './utils'
 
 export default {
   name: 'ContactDeleteModal',
@@ -66,6 +66,7 @@ export default {
     beforeOpen (event) {
       this.contact = event.params.contact
     },
+    formatDate,
     formatFirstLine,
     formatSecondLine,
     onNoButtonClick () {
