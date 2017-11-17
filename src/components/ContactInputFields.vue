@@ -1,12 +1,12 @@
 <template>
-  <el-form ref="form" :model="contactObj">
-    <el-form-item label="First name">
+  <el-form ref="form" :model="contactObj" :rules="rules">
+    <el-form-item label="First name" prop="firstname">
       <el-input v-model="contactObj.firstname"></el-input>
     </el-form-item>
-    <el-form-item label="Last name">
+    <el-form-item label="Last name" prop="lastname">
       <el-input v-model="contactObj.lastname"></el-input>
     </el-form-item>
-    <el-form-item label="Date of birth">
+    <el-form-item label="Date of birth" prop="birthDate">
       <el-date-picker
         v-model="contactObj.birthDate"
         type="date"
@@ -15,15 +15,20 @@
         placeholder="Pick a day">
       </el-date-picker>
     </el-form-item>
-    <el-form-item>
+    <el-form-item prop="emails">
       <label class="el-form-item__label no-float">E-mails</label>
         <ul>
           <li
             v-for="(email, index) in contactObj.emails"
             :key="index"
           >
-            <el-input class="email-input" v-model="contactObj.emails[index]"></el-input>
-            <span class="delete-item" v-on:click="onRemoveEmail(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+            <el-form-item
+              :prop="`emails.${index}`"
+              :rules="emailRules"
+            >
+              <el-input class="email-input" v-model="contactObj.emails[index]"></el-input>
+              <span class="delete-item" v-on:click="onRemoveEmail(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+            </el-form-item>
           </li>
           <div class="add-item" v-on:click="onAddEmail">
             <icon name="plus-circle" scale="2" color="green" />
@@ -44,15 +49,20 @@
         <icon name="plus-circle" scale="2" color="green" />
       </div>
     </fieldset>
-    <el-form-item>
+    <el-form-item prop="phoneNumbers">
       <label class="el-form-item__label no-float">Phone numbers</label>
         <ul>
           <li
             v-for="(phoneNumber, index) in contactObj.phoneNumbers"
             :key="index"
           >
-            <el-input class="email-input" v-model="contactObj.phoneNumbers[index]"></el-input>
-            <span class="delete-item" v-on:click="onRemovePhoneNumber(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+            <el-form-item
+              :prop="`phoneNumbers.${index}`"
+              :rules="phoneNumberRules"
+            >
+              <el-input class="email-input" v-model="contactObj.phoneNumbers[index]"></el-input>
+              <span class="delete-item" v-on:click="onRemovePhoneNumber(index)"><icon scale="2" name="minus-circle" color="red" /></span>
+            </el-form-item>
           </li>
           <div class="add-item" v-on:click="onAddPhoneNumber">
             <icon name="plus-circle" scale="2" color="green" />
@@ -75,10 +85,33 @@ export default {
     const contactObj = this.contact
 
     return {
-      contactObj
+      contactObj,
+      rules: {
+        firstname: { required: true, whitespace: true, message: 'First name is required', trigger: 'blur' },
+        lastname: { required: true, whitespace: true, message: 'Last name is required', trigger: 'blur' },
+        birthDate: { required: true, type: 'object', message: 'Date of birth is required', trigger: 'blur' },
+        emails: {
+          required: true,
+          type: 'array',
+          min: 1,
+          message: 'Add at least one email',
+          trigger: 'blur'
+        },
+        phoneNumbers: { required: true, type: 'array', min: 1, message: 'Add at least one phone number', trigger: 'blur' }
+      },
+      emailRules: [
+        { whitespace: true, required: true, message: 'Email address is required', trigger: 'blur' },
+        { type: 'email', message: 'Email address must be valid', trigger: 'blur' }
+      ],
+      phoneNumberRules: [
+        { whitespace: true, required: true, message: 'Phone number is required', trigger: 'blur' },
+      ]
     }
   },
   methods: {
+    getForm () {
+      return this.$refs.form
+    },
     onAddAddress () {
       this.contactObj.addresses = [
         ...this.contactObj.addresses,

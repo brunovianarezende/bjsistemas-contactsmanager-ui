@@ -9,7 +9,7 @@
   >
   <div class="add-modal">
     <h1>Add contact</h1>
-    <contact-input-fields :contact="contact" />
+    <contact-input-fields :contact="contact" ref="fieldsForm" />
     <div class="buttons-container">
       <el-button class="save-add" v-on:click="onSaveButtonClick" type="primary">Save</el-button>
       <el-button class="cancel-add" v-on:click="onCancelButtonClick">Cancel</el-button>
@@ -40,21 +40,25 @@ export default {
       }
     },
     onSaveButtonClick () {
-      const contact = this.contact
-      if (contact.birthDate) {
-        // make sure birthDate is a string
-        contact.birthDate = contact.birthDate.toISOString().substring(0, 10)
-      }
-
-      this.$store.dispatch('addContact', contact)
-        .then(() => {
-          if (this.onAddSuccess) {
-            return this.onAddSuccess(contact)
-          } else {
-            return Promise.resolve()
+      this.$refs.fieldsForm.getForm().validate((valid) => {
+        if (valid) {
+          const contact = this.contact
+          if (contact.birthDate) {
+            // make sure birthDate is a string
+            contact.birthDate = contact.birthDate.toISOString().substring(0, 10)
           }
-        })
-        .then(() => this.$modal.hide('contact-add-modal'))
+
+          this.$store.dispatch('addContact', contact)
+            .then(() => {
+              if (this.onAddSuccess) {
+                return this.onAddSuccess(contact)
+              } else {
+                return Promise.resolve()
+              }
+            })
+            .then(() => this.$modal.hide('contact-add-modal'))
+        }
+      })
     },
     onCancelButtonClick () {
       this.$modal.hide('contact-add-modal')
