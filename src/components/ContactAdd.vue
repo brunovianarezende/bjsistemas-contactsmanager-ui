@@ -23,6 +23,7 @@ import ContactInputFields from './ContactInputFields'
 
 export default {
   name: 'ContactAddModal',
+  props: ['onAddSuccess'],
   data () {
     return {
       contact: {}
@@ -46,6 +47,13 @@ export default {
       }
 
       this.$store.dispatch('addContact', contact)
+        .then(() => {
+          if (this.onAddSuccess) {
+            return this.onAddSuccess(contact)
+          } else {
+            return Promise.resolve()
+          }
+        })
         .then(() => this.$modal.hide('contact-add-modal'))
     },
     onCancelButtonClick () {

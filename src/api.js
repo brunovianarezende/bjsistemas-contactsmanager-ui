@@ -39,18 +39,24 @@ class TempApi {
   }
 
   searchContacts (search) {
+    const n = (w) => w.toLowerCase()
     const result = this.contacts.filter((i) => {
-      return i.firstname.toLowerCase().startsWith(search.firstname) && i.lastname.toLowerCase().startsWith(search.lastname)
+      return n(i.firstname).startsWith(n(search.firstname)) &&
+        n(i.lastname).startsWith(n(search.lastname))
     })
     result.sort((a, b) => {
-      if (a.firstname < b.firstname) {
+      const firstnameA = n(a.firstname)
+      const firstnameB = n(b.firstname)
+      if (firstnameA < firstnameB) {
         return -1
-      } else if (a.firstname > b.firstname) {
+      } else if (firstnameA > firstnameB) {
         return 1
       } else {
-        if (a.lastname < b.lastname) {
+        const lastnameA = n(a.lastname)
+        const lastnameB = n(b.lastname)
+        if (lastnameA < lastnameB) {
           return -1
-        } else if (a.lastname > b.lastname) {
+        } else if (lastnameA > lastnameB) {
           return 1
         } else {
           return 0

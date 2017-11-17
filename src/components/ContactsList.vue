@@ -1,6 +1,6 @@
 <template>
   <div>
-    <contact-add-modal />
+    <contact-add-modal :onAddSuccess="updateSearchAndResults" />
     <contact-edit-modal />
     <contact-delete-modal />
     <el-row>
@@ -11,10 +11,10 @@
         <div class="search-options">
           <el-form :inline="true" :model="search">
             <el-form-item label="First name">
-              <el-input @input="updateSearchFirstName" />
+              <el-input v-model="search.firstname" @input="updateSearchResults" />
             </el-form-item>
             <el-form-item label="Last name">
-              <el-input @input="updateSearchLastName" />
+              <el-input v-model="search.lastname" @input="updateSearchResults" />
             </el-form-item>
           </el-form>
         </div>
@@ -135,16 +135,16 @@ export default {
     deleteContact (contact) {
       this.$modal.show('contact-delete-modal', { contact })
     },
-    updateSearchFirstName: debounce(function (value) {
-      this.search.firstname = value
+    updateSearchResults: debounce(function (value) {
       this.doSearch()
-    }, 500),
-    updateSearchLastName: debounce(function (value) {
-      this.search.lastname = value
-      this.doSearch()
-    }, 500),
+    }, 400),
     doSearch () {
       this.$store.dispatch('searchContacts', this.search)
+    },
+    updateSearchAndResults (contact) {
+      this.search.firstname = contact.firstname
+      this.search.lastname = contact.lastname
+      this.doSearch()
     }
   },
   components: {
