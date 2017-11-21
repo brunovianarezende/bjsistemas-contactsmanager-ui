@@ -23,6 +23,7 @@ import ContactInputFields from './ContactInputFields'
 
 export default {
   name: 'ContactEditModal',
+  props: ['onEditSuccess'],
   data () {
     return {
       contact: {}
@@ -51,6 +52,13 @@ export default {
       }
 
       this.$store.dispatch('editContact', contact)
+        .then(() => {
+          if (this.onEditSuccess) {
+            return this.onEditSuccess(contact)
+          } else {
+            return Promise.resolve()
+          }
+        })
         .then(() => this.$modal.hide('contact-edit-modal'))
     },
     onCancelButtonClick () {

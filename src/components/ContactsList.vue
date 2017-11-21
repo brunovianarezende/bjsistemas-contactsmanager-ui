@@ -1,7 +1,7 @@
 <template>
   <div>
     <contact-add-modal :onAddSuccess="updateSearchAndResults" />
-    <contact-edit-modal />
+    <contact-edit-modal :onEditSuccess="doSearch" />
     <contact-delete-modal />
     <el-row>
       <el-col :span="24"><div><h1>Contacts <a class="add-contact-icon" v-on:click="addContact()"><icon class="add-icon" name="plus-circle" scale="2" color="green" /></a></h1></div></el-col>

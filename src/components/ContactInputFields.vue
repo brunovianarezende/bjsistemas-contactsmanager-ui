@@ -94,7 +94,7 @@ export default {
         { type: 'email', message: 'Email address must be valid', trigger: 'blur' }
       ],
       phoneNumberRules: [
-        { whitespace: true, required: true, message: 'Phone number is required', trigger: 'blur' },
+        { whitespace: true, required: true, message: 'Phone number is required', trigger: 'blur' }
       ]
     }
   },

@@ -47,8 +47,20 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false,    
-  },
+
+    proxyTable: {
+      // proxy all requests starting with /api to jsonplaceholder
+      '/api': {
+        target: 'http://127.0.0.1:5000/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
   
+  },
+
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),
